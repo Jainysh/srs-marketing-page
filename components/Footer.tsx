@@ -12,6 +12,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import Link from "next/link";
 import { Company } from "@/lib/AppConstants";
+import { colorPallette } from "@/styles/theme";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,7 +33,7 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        bgcolor: "#2C2C2C",
+        bgcolor: colorPallette.text.primary,
         color: "white",
         pt: 8,
         pb: 4,
@@ -46,7 +47,6 @@ const Footer = () => {
             <Typography
               variant="h4"
               sx={{
-                // fontFamily: "Montserrat",
                 fontWeight: 700,
                 color: "primary.main",
                 mb: 2,
@@ -68,9 +68,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
-                  bgcolor: "secondary.main",
-                  color: "primary.main",
-                  "&:hover": { bgcolor: "secondary.dark" },
+                  bgcolor: "primary.main",
+                  color: "white",
+                  "&:hover": { bgcolor: "primary.dark" },
                 }}
               >
                 <WhatsAppIcon />
@@ -78,9 +78,9 @@ const Footer = () => {
               <IconButton
                 href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
                 sx={{
-                  bgcolor: "secondary.main",
-                  color: "primary.main",
-                  "&:hover": { bgcolor: "secondary.dark" },
+                  bgcolor: "primary.main",
+                  color: "white",
+                  "&:hover": { bgcolor: "primary.dark" },
                 }}
               >
                 <PhoneIcon />
@@ -88,9 +88,9 @@ const Footer = () => {
               <IconButton
                 href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
                 sx={{
-                  bgcolor: "secondary.main",
-                  color: "primary.main",
-                  "&:hover": { bgcolor: "secondary.dark" },
+                  bgcolor: "primary.main",
+                  color: "white",
+                  "&:hover": { bgcolor: "primary.dark" },
                 }}
               >
                 <EmailIcon />

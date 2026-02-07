@@ -23,6 +23,7 @@ import CategoryIcon from "@mui/icons-material/Category";
 import ConversionBlock from "@/components/ConversionBlock";
 import { getProductsByCategory } from "@/lib/contentful";
 import { Company } from "@/lib/AppConstants";
+import { colorPallette } from "@/styles/theme";
 
 const MotionBox = motion(Box);
 
@@ -74,7 +75,7 @@ const SareesPage = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          background: "linear-gradient(135deg, #FFE54D 0%, #FFFFFF 100%)",
+          background: `linear-gradient(135deg, ${colorPallette.primary.light} 0%, ${colorPallette.primary.contrastText} 100%)`,
           py: { xs: 8, md: 12 },
           position: "relative",
         }}

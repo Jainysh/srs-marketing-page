@@ -19,6 +19,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Company } from "@/lib/AppConstants";
+import { colorPallette } from "@/styles/theme";
 
 const MotionBox = motion(Box);
 const MotionPaper = motion(Paper);
@@ -89,21 +90,21 @@ const ContactPage = () => {
     {
       icon: <PhoneIcon sx={{ fontSize: 40, color: "primary.main" }} />,
       title: "Phone",
-      content: process.env.NEXT_PUBLIC_PHONE_NUMBER || "+91-XXXXX-XXXXX",
-      href: `tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`,
+      content: `+91${Company.contact.phone}`,
+      href: `tel:+91${Company.contact.phone}`,
     },
     {
       icon: <WhatsAppIcon sx={{ fontSize: 40, color: "primary.main" }} />,
       title: "WhatsApp",
       content: "Chat with us",
-      href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`,
+      href: `https://wa.me/91${Company.contact.phone}`,
     },
-    {
-      icon: <EmailIcon sx={{ fontSize: 40, color: "primary.main" }} />,
-      title: "Email",
-      content: process.env.NEXT_PUBLIC_EMAIL || "contact@example.com",
-      href: `mailto:${process.env.NEXT_PUBLIC_EMAIL}`,
-    },
+    // {
+    //   icon: <EmailIcon sx={{ fontSize: 40, color: "primary.main" }} />,
+    //   title: "Email",
+    //   content: process.env.NEXT_PUBLIC_EMAIL || "contact@example.com",
+    //   href: `mailto:${process.env.NEXT_PUBLIC_EMAIL}`,
+    // },
     {
       icon: <LocationOnIcon sx={{ fontSize: 40, color: "primary.main" }} />,
       title: "Location",
@@ -125,7 +126,7 @@ const ContactPage = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          background: "linear-gradient(135deg, #2C2C2C 0%, #5A5A5A 100%)",
+          background: `linear-gradient(135deg, ${colorPallette.text.primary} 0%, ${colorPallette.text.secondary} 100%)`,
           color: "white",
           py: { xs: 8, md: 12 },
         }}
@@ -144,7 +145,7 @@ const ContactPage = () => {
               className="golden-line"
               sx={{
                 mx: "auto",
-                background: "linear-gradient(90deg, #D4AF37 0%, #F4E5C2 100%)",
+                background: `linear-gradient(90deg, ${colorPallette.primary.main} 0%, ${colorPallette.primary.light} 100%)`,
               }}
             />
             <Typography
@@ -167,21 +168,13 @@ const ContactPage = () => {
       <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }}>
         <Grid container spacing={3}>
           {contactInfo.map((info, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index}>
+            <Grid item xs={12} sm={6} md={4} key={index}>
               <MotionPaper
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 elevation={0}
-                component="a"
-                href={info.href}
-                target={info.href.startsWith("http") ? "_blank" : undefined}
-                rel={
-                  info.href.startsWith("http")
-                    ? "noopener noreferrer"
-                    : undefined
-                }
                 sx={{
                   p: 3,
                   textAlign: "center",
@@ -197,13 +190,24 @@ const ContactPage = () => {
                   },
                 }}
               >
-                <Box sx={{ mb: 2 }}>{info.icon}</Box>
-                <Typography variant="h6" sx={{ mb: 1, fontWeight: 600 }}>
-                  {info.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {info.content}
-                </Typography>
+                <a
+                  href={info.href}
+                  target={info.href.startsWith("http") ? "_blank" : undefined}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                  rel={
+                    info.href.startsWith("http")
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
+                >
+                  <Box sx={{ mb: 2 }}>{info.icon}</Box>
+                  <Typography variant="h6" sx={{ mb: 1, fontWeight: 600 }}>
+                    {info.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {info.content}
+                  </Typography>
+                </a>
               </MotionPaper>
             </Grid>
           ))}

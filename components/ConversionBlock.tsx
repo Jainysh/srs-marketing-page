@@ -3,6 +3,7 @@ import { Box, Container, Typography, Button, Stack } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { motion } from "framer-motion";
+import { colorPallette } from "@/styles/theme";
 
 interface ConversionBlockProps {
   text?: string;
@@ -28,8 +29,7 @@ const ConversionBlock: React.FC<ConversionBlockProps> = ({
           left: 0,
           right: 0,
           height: "4px",
-          background:
-            "linear-gradient(90deg, #D4AF37 0%, #F4E5C2 50%, #D4AF37 100%)",
+          background: `linear-gradient(90deg, ${colorPallette.primary.main} 0%, ${colorPallette.primary.light} 50%, ${colorPallette.primary.main} 100%)`,
         },
       }}
     >

@@ -1,4 +1,6 @@
 import { Global, css } from "@emotion/react";
+import { color } from "framer-motion";
+import { colorPallette } from "./theme";
 
 const GlobalStyles = () => (
   <Global
@@ -27,7 +29,11 @@ const GlobalStyles = () => (
       .golden-line {
         width: 80px;
         height: 3px;
-        background: linear-gradient(90deg, #d4af37 0%, #f4e5c2 100%);
+        background: linear-gradient(
+          90deg,
+          ${colorPallette.primary.main} 0%,
+          ${colorPallette.primary.light} 100%
+        );
         margin: 16px 0;
       }
 
@@ -64,12 +70,12 @@ const GlobalStyles = () => (
       }
 
       ::-webkit-scrollbar-thumb {
-        background: #d4af37;
+        background: ${colorPallette.primary.main};
         border-radius: 5px;
       }
 
       ::-webkit-scrollbar-thumb:hover {
-        background: #b8941f;
+        background: ${colorPallette.primary.dark};
       }
     `}
   />

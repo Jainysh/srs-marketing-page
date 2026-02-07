@@ -69,9 +69,6 @@ const Navbar = () => {
       >
         <Box
           sx={{
-            // fontFamily: "Montserrat",
-
-            // fontSize: "1.5rem",/
             fontWeight: 700,
             color: "primary.main",
             display: "flex",
@@ -82,6 +79,8 @@ const Navbar = () => {
               color: "primary.dark",
             },
           }}
+          component="a"
+          href="/"
         >
           <img
             src="/images/logo_hd.jpg"
@@ -157,6 +156,7 @@ const Navbar = () => {
                   />
                   <Box
                     component="a"
+                    href="/"
                     sx={{
                       fontFamily: "Montserrat",
                       fontSize: { xs: "1.5rem", md: "1.8rem" },

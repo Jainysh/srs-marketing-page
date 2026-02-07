@@ -19,6 +19,7 @@ import AutorenewIcon from "@mui/icons-material/Autorenew";
 import ConversionBlock from "@/components/ConversionBlock";
 import { getAboutContent } from "@/lib/contentful";
 import { Company } from "@/lib/AppConstants";
+import { colorPallette } from "@/styles/theme";
 
 const MotionBox = motion(Box);
 const MotionPaper = motion(Paper);
@@ -105,7 +106,7 @@ const AboutPage = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          background: "linear-gradient(135deg, #2C2C2C 0%, #5A5A5A 100%)",
+          background: `linear-gradient(135deg, ${colorPallette.text.primary} 0%, ${colorPallette.text.secondary} 100%)`,
           color: "white",
           py: { xs: 8, md: 12 },
           position: "relative",
@@ -137,7 +138,7 @@ const AboutPage = () => {
               className="golden-line"
               sx={{
                 mx: "auto",
-                background: "linear-gradient(90deg, #D4AF37 0%, #F4E5C2 100%)",
+                background: `linear-gradient(90deg, ${colorPallette.primary.main} 0%, ${colorPallette.primary.light} 100%)`,
               }}
             />
             <Typography

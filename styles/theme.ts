@@ -1,28 +1,29 @@
 import { createTheme } from "@mui/material/styles";
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#D4AF37", // Golden
-      light: "#F4E5C2",
-      dark: "#B8941F",
-      contrastText: "#FFFFFF",
-    },
-    secondary: {
-      main: "#8B7355", // Earthy brown for handloom feel
-      light: "#C5B299",
-      dark: "#5D4E3B",
-      contrastText: "#FFFFFF",
-    },
-    background: {
-      default: "#FFFFFF",
-      paper: "#FAFAFA",
-    },
-    text: {
-      primary: "#2C2C2C",
-      secondary: "#5A5A5A",
-    },
+export const colorPallette = {
+  primary: {
+    main: "#D4AF37", // Golden
+    light: "#F4E5C2",
+    dark: "#B8941F",
+    contrastText: "#FFFFFF",
   },
+  secondary: {
+    main: "#8B7355", // Earthy brown for handloom feel
+    light: "#C5B299",
+    dark: "#5D4E3B",
+    contrastText: "#FFFFFF",
+  },
+  background: {
+    default: "#FFFFFF",
+    paper: "#FAFAFA",
+  },
+  text: {
+    primary: "#2C2C2C",
+    secondary: "#5A5A5A",
+  },
+};
+const theme = createTheme({
+  palette: colorPallette,
   typography: {
     fontFamily: '"Montserrat", serif',
     h1: {

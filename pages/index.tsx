@@ -19,6 +19,7 @@ import HandshakeIcon from "@mui/icons-material/Handshake";
 import Link from "next/link";
 import ConversionBlock from "@/components/ConversionBlock";
 import { Company } from "@/lib/AppConstants";
+import { colorPallette } from "@/styles/theme";
 // import { getHomeContent } from "@/lib/contentful";
 
 const MotionBox = motion(Box);
@@ -68,7 +69,7 @@ const HomePage = () => {
     <>
       <Head>
         <title>
-          Legacy Textiles - Trusted Wholesale Textile Supplier Since
+          {Company.name} - Trusted Wholesale Textile Supplier Since
           {Company.established}
         </title>
         <meta
@@ -88,7 +89,7 @@ const HomePage = () => {
           minHeight: { xs: "70vh", md: "80vh" },
           display: "flex",
           alignItems: "center",
-          background: "linear-gradient(135deg, #FFFFFF 0%, #F4E5C2 100%)",
+          background: `linear-gradient(135deg, ${colorPallette.primary.contrastText} 0%, ${colorPallette.primary.light} 100%)`,
           overflow: "hidden",
           "&::before": {
             content: '""',
@@ -116,8 +117,7 @@ const HomePage = () => {
                   variant="h1"
                   sx={{
                     mb: 3,
-                    background:
-                      "linear-gradient(135deg, #2C2C2C 0%, #D4AF37 100%)",
+                    background: `linear-gradient(135deg, ${colorPallette.text.primary} 0%, ${colorPallette.primary.main} 100%)`,
                     backgroundClip: "text",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
