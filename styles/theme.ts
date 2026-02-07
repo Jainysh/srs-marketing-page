@@ -24,9 +24,9 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Cormorant Garamond", "Lora", "Georgia", serif',
+    fontFamily: '"Montserrat", serif',
     h1: {
-      fontFamily: '"Playfair Display", "Cormorant Garamond", serif',
+      fontFamily: '"Lora"',
       fontWeight: 700,
       fontSize: "3.5rem",
       letterSpacing: "-0.02em",
@@ -36,7 +36,7 @@ const theme = createTheme({
       },
     },
     h2: {
-      fontFamily: '"Playfair Display", "Cormorant Garamond", serif',
+      fontFamily: '"Lora"',
       fontWeight: 600,
       fontSize: "2.75rem",
       letterSpacing: "-0.01em",
@@ -46,7 +46,7 @@ const theme = createTheme({
       },
     },
     h3: {
-      fontFamily: '"Playfair Display", "Cormorant Garamond", serif',
+      fontFamily: '"Lora"',
       fontWeight: 600,
       fontSize: "2.25rem",
       lineHeight: 1.4,
@@ -55,7 +55,7 @@ const theme = createTheme({
       },
     },
     h4: {
-      fontFamily: '"Playfair Display", "Cormorant Garamond", serif',
+      fontFamily: '"Lora"',
       fontWeight: 500,
       fontSize: "1.75rem",
       lineHeight: 1.4,

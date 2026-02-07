@@ -26,53 +26,55 @@ import { Company } from "@/lib/AppConstants";
 
 const MotionBox = motion(Box);
 
-const LungiPage = () => {
+const SareesPage = () => {
   const features = [
-    "Premium handloom quality",
-    "Multiple design variants available",
-    "Consistent color and weave standards",
-    "Regular bulk availability",
-    "Standardized packaging options",
-    "Suitable for retail and wholesale markets",
+    "Curated saree collections",
+    "Traditional and contemporary designs",
+    "Consistent quality standards",
+    "Wholesale bulk availability",
+    "Sourced from authentic handloom clusters",
+    "Multiple fabric and design options",
   ];
 
   const specifications = [
     {
       icon: <CategoryIcon sx={{ color: "primary.main" }} />,
       title: "Variants",
-      description: "Traditional checks, stripes, and solid colors",
+      description: "Cotton, silk, and blended sarees",
     },
     {
       icon: <VerifiedIcon sx={{ color: "primary.main" }} />,
-      title: "Quality Consistency",
-      description: "Rigorous quality checks for every batch",
+      title: "Quality Sourcing",
+      description: "Curated from trusted weaving centers",
     },
     {
       icon: <InventoryIcon sx={{ color: "primary.main" }} />,
-      title: "Bulk Availability",
-      description: "Large volume orders handled efficiently",
+      title: "Bulk Distribution",
+      description: "Large volume handling capabilities",
     },
     {
       icon: <LocalShippingIcon sx={{ color: "primary.main" }} />,
       title: "Regular Supply",
-      description: "Reliable delivery schedules across India",
+      description: "Consistent availability maintained",
     },
   ];
 
   return (
     <>
       <Head>
-        <title>Wholesale Handloom Lungi Supplier | {Company.name}</title>
+        <title>
+          Wholesale Saree Supplier | Handloom Sarees | {Company.name}
+        </title>
         <meta
           name="description"
-          content="Quality handloom lungis in bulk quantities. Wholesale supplier with organized operations and reliable sourcing network across India."
+          content="Wholesale sourcing and bulk distribution of quality sarees. Trusted partner for retailers and wholesalers across India."
         />
       </Head>
 
       {/* Hero Section */}
       <Box
         sx={{
-          background: "linear-gradient(135deg, #F4E5C2 0%, #FFFFFF 100%)",
+          background: "linear-gradient(135deg, #FFE54D 0%, #FFFFFF 100%)",
           py: { xs: 8, md: 12 },
           position: "relative",
         }}
@@ -85,7 +87,7 @@ const LungiPage = () => {
             sx={{ textAlign: "center" }}
           >
             <Typography variant="h1" sx={{ mb: 3 }}>
-              Handloom Lungi
+              Elegant Sarees
             </Typography>
             <Box className="golden-line" sx={{ mx: "auto" }} />
             <Typography
@@ -98,9 +100,21 @@ const LungiPage = () => {
                 color: "text.secondary",
               }}
             >
-              We supply high-quality lungis in bulk quantities to retailers and
-              wholesalers through our organized wholesale operations and
-              sourcing network.
+              Wholesale sourcing + bulk distribution partner for quality sarees
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                mt: 2,
+                maxWidth: "700px",
+                mx: "auto",
+                fontWeight: 400,
+                color: "text.secondary",
+                fontStyle: "italic",
+              }}
+            >
+              Not a producer — but your trusted curator, supplier, and
+              distributor
             </Typography>
           </MotionBox>
         </Container>
@@ -125,7 +139,6 @@ const LungiPage = () => {
               borderColor: "divider",
             }}
           >
-            {/* Placeholder for product image */}
             <Box
               sx={{
                 position: "absolute",
@@ -139,7 +152,7 @@ const LungiPage = () => {
                 Product Image
               </Typography>
               <Typography variant="body1" color="text.secondary" sx={{ mt: 1 }}>
-                Add your lungi product images here
+                Add your saree product images here
               </Typography>
             </Box>
           </Box>
@@ -157,7 +170,7 @@ const LungiPage = () => {
               transition={{ duration: 0.6 }}
             >
               <Typography variant="h3" sx={{ mb: 3 }}>
-                Product Features
+                Our Offering
               </Typography>
               <Box className="golden-line" />
               <List sx={{ mt: 3 }}>
@@ -187,12 +200,12 @@ const LungiPage = () => {
               transition={{ duration: 0.6 }}
             >
               <Typography variant="h3" sx={{ mb: 3 }}>
-                Available Variants
+                Saree Collections
               </Typography>
               <Box className="golden-line" />
               <Stack direction="row" flexWrap="wrap" gap={1.5} sx={{ mt: 3 }}>
                 <Chip
-                  label="Traditional Checks"
+                  label="Cotton Sarees"
                   variant="outlined"
                   sx={{
                     fontSize: "1rem",
@@ -201,7 +214,7 @@ const LungiPage = () => {
                   }}
                 />
                 <Chip
-                  label="Classic Stripes"
+                  label="Silk Sarees"
                   variant="outlined"
                   sx={{
                     fontSize: "1rem",
@@ -210,7 +223,7 @@ const LungiPage = () => {
                   }}
                 />
                 <Chip
-                  label="Solid Colors"
+                  label="Handloom Sarees"
                   variant="outlined"
                   sx={{
                     fontSize: "1rem",
@@ -219,7 +232,7 @@ const LungiPage = () => {
                   }}
                 />
                 <Chip
-                  label="Border Designs"
+                  label="Daily Wear"
                   variant="outlined"
                   sx={{
                     fontSize: "1rem",
@@ -228,7 +241,16 @@ const LungiPage = () => {
                   }}
                 />
                 <Chip
-                  label="Custom Patterns"
+                  label="Party Wear"
+                  variant="outlined"
+                  sx={{
+                    fontSize: "1rem",
+                    py: 2.5,
+                    borderColor: "primary.main",
+                  }}
+                />
+                <Chip
+                  label="Traditional"
                   variant="outlined"
                   sx={{
                     fontSize: "1rem",
@@ -241,8 +263,8 @@ const LungiPage = () => {
                 variant="body1"
                 sx={{ mt: 4, fontSize: "1.125rem", color: "text.secondary" }}
               >
-                All variants available in multiple color combinations and sizes
-                to meet diverse market requirements.
+                Carefully curated collections sourced from renowned weaving
+                centers across India to meet diverse market demands.
               </Typography>
             </MotionBox>
           </Grid>
@@ -261,7 +283,7 @@ const LungiPage = () => {
             sx={{ mb: 6 }}
           >
             <Typography variant="h2" sx={{ mb: 2 }}>
-              Supply Capabilities
+              Distribution Capabilities
             </Typography>
             <Box className="golden-line" sx={{ mx: "auto" }} />
           </MotionBox>
@@ -300,7 +322,7 @@ const LungiPage = () => {
         </Container>
       </Box>
 
-      {/* Packaging Information */}
+      {/* Our Role */}
       <Container maxWidth="lg" sx={{ py: { xs: 8, md: 10 } }}>
         <MotionBox
           initial={{ opacity: 0, y: 30 }}
@@ -311,15 +333,14 @@ const LungiPage = () => {
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={6}>
               <Typography variant="h3" sx={{ mb: 3 }}>
-                Packaging Formats
+                Our Distribution Model
               </Typography>
               <Box className="golden-line" />
               <Typography
                 variant="body1"
                 sx={{ mt: 3, fontSize: "1.125rem", lineHeight: 1.8 }}
               >
-                We offer flexible packaging solutions tailored to your business
-                needs:
+                As your wholesale saree partner, we focus on:
               </Typography>
               <List sx={{ mt: 2 }}>
                 <ListItem sx={{ px: 0 }}>
@@ -327,7 +348,7 @@ const LungiPage = () => {
                     <CheckCircleIcon sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Bulk carton packaging for large orders"
+                    primary="Sourcing quality sarees from authentic handloom centers"
                     primaryTypographyProps={{ fontSize: "1.125rem" }}
                   />
                 </ListItem>
@@ -336,7 +357,7 @@ const LungiPage = () => {
                     <CheckCircleIcon sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Individual poly-bag packing available"
+                    primary="Curating collections that match market trends"
                     primaryTypographyProps={{ fontSize: "1.125rem" }}
                   />
                 </ListItem>
@@ -345,7 +366,16 @@ const LungiPage = () => {
                     <CheckCircleIcon sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Custom branding options for retailers"
+                    primary="Maintaining consistent quality standards"
+                    primaryTypographyProps={{ fontSize: "1.125rem" }}
+                  />
+                </ListItem>
+                <ListItem sx={{ px: 0 }}>
+                  <ListItemIcon sx={{ minWidth: 40 }}>
+                    <CheckCircleIcon sx={{ color: "primary.main" }} />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Ensuring timely bulk supply to your business"
                     primaryTypographyProps={{ fontSize: "1.125rem" }}
                   />
                 </ListItem>
@@ -354,7 +384,7 @@ const LungiPage = () => {
             <Grid item xs={12} md={6}>
               <Box
                 sx={{
-                  height: 350,
+                  height: 400,
                   bgcolor: "grey.200",
                   borderRadius: "4px",
                   border: "1px solid",
@@ -385,7 +415,7 @@ const LungiPage = () => {
               variant="h5"
               sx={{ mb: 4, color: "rgba(255,255,255,0.9)", fontWeight: 400 }}
             >
-              Contact us today to discuss your requirements
+              Contact us today to discuss your saree requirements
             </Typography>
           </MotionBox>
         </Container>
@@ -396,10 +426,10 @@ const LungiPage = () => {
   );
 };
 
-export default LungiPage;
+export default SareesPage;
 
 export async function getStaticProps() {
-  const products = await getProductsByCategory("lungi");
+  const products = await getProductsByCategory("sarees");
 
   return {
     props: {

@@ -18,6 +18,7 @@ import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import AutorenewIcon from "@mui/icons-material/Autorenew";
 import ConversionBlock from "@/components/ConversionBlock";
 import { getAboutContent } from "@/lib/contentful";
+import { Company } from "@/lib/AppConstants";
 
 const MotionBox = motion(Box);
 const MotionPaper = motion(Paper);
@@ -93,11 +94,11 @@ const AboutPage = () => {
     <>
       <Head>
         <title>
-          About Us - Legacy Textiles | 45+ Years of Wholesale Excellence
+          About Us - {Company.name} | 45+ Years of Wholesale Excellence
         </title>
         <meta
           name="description"
-          content="Established in 1978, Legacy Textiles is a trusted handloom and textile wholesale business with decades of experience in the Indian textile trade."
+          content={`Established in ${Company.established}, ${Company.name} is a trusted handloom and textile wholesale business with decades of experience in the Indian textile trade.`}
         />
       </Head>
 
@@ -130,7 +131,7 @@ const AboutPage = () => {
             sx={{ textAlign: "center", position: "relative", zIndex: 1 }}
           >
             <Typography variant="h1" sx={{ mb: 3, color: "white" }}>
-              About Legacy Textiles
+              About {Company.name}
             </Typography>
             <Box
               className="golden-line"
@@ -150,7 +151,7 @@ const AboutPage = () => {
                 color: "rgba(255,255,255,0.9)",
               }}
             >
-              A Legacy of Trust Since 1978
+              A Legacy of Trust Since {Company.established}
             </Typography>
           </MotionBox>
         </Container>
@@ -174,11 +175,12 @@ const AboutPage = () => {
                 variant="body1"
                 sx={{ mt: 3, mb: 2, fontSize: "1.125rem", lineHeight: 1.8 }}
               >
-                Established in 1978, we are a legacy handloom and textile
-                wholesale business with decades of experience in the Indian
-                textile trade. Over the years, we have built a strong sourcing
-                network, reliable supply systems, and long-term relationships
-                with retailers and wholesalers across multiple markets.
+                Established in {Company.established}, we are a legacy handloom
+                and textile wholesale business with decades of experience in the
+                Indian textile trade. Over the years, we have built a strong
+                sourcing network, reliable supply systems, and long-term
+                relationships with retailers and wholesalers across multiple
+                markets.
               </Typography>
               <Typography
                 variant="body1"
@@ -380,6 +382,6 @@ export async function getStaticProps() {
     props: {
       aboutContent: aboutContent || null,
     },
-    revalidate: 3600,
+    // revalidate: 3600,
   };
 }

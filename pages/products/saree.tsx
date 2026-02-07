@@ -22,6 +22,7 @@ import VerifiedIcon from "@mui/icons-material/Verified";
 import CategoryIcon from "@mui/icons-material/Category";
 import ConversionBlock from "@/components/ConversionBlock";
 import { getProductsByCategory } from "@/lib/contentful";
+import { Company } from "@/lib/AppConstants";
 
 const MotionBox = motion(Box);
 
@@ -62,7 +63,7 @@ const SareesPage = () => {
     <>
       <Head>
         <title>
-          Wholesale Saree Supplier | Handloom Sarees | Legacy Textiles
+          Wholesale Saree Supplier | Handloom Sarees | {Company.name}
         </title>
         <meta
           name="description"

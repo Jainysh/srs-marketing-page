@@ -22,6 +22,7 @@ import VerifiedIcon from "@mui/icons-material/Verified";
 import CategoryIcon from "@mui/icons-material/Category";
 import ConversionBlock from "@/components/ConversionBlock";
 import { getProductsByCategory } from "@/lib/contentful";
+import { Company } from "@/lib/AppConstants";
 
 const MotionBox = motion(Box);
 
@@ -62,7 +63,7 @@ const TowelsPage = () => {
     <>
       <Head>
         <title>
-          Wholesale Towel Supplier | Bath & Hand Towels | Legacy Textiles
+          Wholesale Towel Supplier | Bath & Hand Towels | {Company.name}
         </title>
         <meta
           name="description"
@@ -413,6 +414,6 @@ export async function getStaticProps() {
     props: {
       products,
     },
-    revalidate: 3600,
+    // revalidate: 3600,
   };
 }

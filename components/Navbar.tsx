@@ -12,11 +12,13 @@ import {
   Box,
   useScrollTrigger,
   Slide,
+  Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Company } from "@/lib/AppConstants";
 
 interface Props {
   window?: () => Window;
@@ -67,13 +69,31 @@ const Navbar = () => {
       >
         <Box
           sx={{
-            fontFamily: "Playfair Display",
-            fontSize: "1.5rem",
+            // fontFamily: "Montserrat",
+
+            // fontSize: "1.5rem",/
             fontWeight: 700,
             color: "primary.main",
+            display: "flex",
+            alignItems: "center",
+            cursor: "pointer",
+            transition: "all 0.3s ease",
+            "&:hover": {
+              color: "primary.dark",
+            },
           }}
         >
-          Legacy Textiles
+          <img
+            src="/images/logo_hd.jpg"
+            alt={`${Company.name} Logo`}
+            style={{ height: 40, marginRight: 8 }}
+          />
+          <Typography
+            variant="h5"
+            sx={{ fontWeight: 700, color: "primary.main" }}
+          >
+            {Company.name}
+          </Typography>
         </Box>
         <IconButton onClick={handleDrawerToggle}>
           <CloseIcon />
@@ -129,22 +149,29 @@ const Navbar = () => {
             <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
               {/* Logo */}
               <Link href="/" passHref legacyBehavior>
-                <Box
-                  component="a"
-                  sx={{
-                    fontFamily: "Playfair Display",
-                    fontSize: { xs: "1.5rem", md: "2rem" },
-                    fontWeight: 700,
-                    color: "primary.main",
-                    cursor: "pointer",
-                    transition: "all 0.3s ease",
-                    "&:hover": {
-                      color: "primary.dark",
-                    },
-                  }}
-                >
-                  Legacy Textiles
-                </Box>
+                <>
+                  <img
+                    src="/images/logo_hd.jpg"
+                    alt={`${Company.name} Logo`}
+                    style={{ height: 40 }}
+                  />
+                  <Box
+                    component="a"
+                    sx={{
+                      fontFamily: "Montserrat",
+                      fontSize: { xs: "1.5rem", md: "1.8rem" },
+                      fontWeight: 700,
+                      color: "primary.main",
+                      cursor: "pointer",
+                      transition: "all 0.3s ease",
+                      "&:hover": {
+                        color: "primary.dark",
+                      },
+                    }}
+                  >
+                    {Company.name}
+                  </Box>
+                </>
               </Link>
 
               {/* Desktop Navigation */}

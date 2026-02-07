@@ -18,6 +18,7 @@ import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import Link from "next/link";
 import ConversionBlock from "@/components/ConversionBlock";
+import { Company } from "@/lib/AppConstants";
 // import { getHomeContent } from "@/lib/contentful";
 
 const MotionBox = motion(Box);
@@ -67,11 +68,12 @@ const HomePage = () => {
     <>
       <Head>
         <title>
-          Legacy Textiles - Trusted Wholesale Textile Supplier Since 1978
+          Legacy Textiles - Trusted Wholesale Textile Supplier Since
+          {Company.established}
         </title>
         <meta
           name="description"
-          content="Wholesale supplier of quality handloom lungis, towels, and sarees. Serving India since 1978 with reliable supply chain and trusted partnerships."
+          content={`Wholesale supplier of quality handloom lungis, towels, and sarees. Serving India since ${Company.established} with reliable supply chain and trusted partnerships.`}
         />
         <meta
           name="keywords"
@@ -133,7 +135,8 @@ const HomePage = () => {
                     lineHeight: 1.6,
                   }}
                 >
-                  Supplying quality textiles for over four decades since 1978
+                  Supplying quality textiles for over four decades since{" "}
+                  {Company.established}
                 </Typography>
                 <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
                   <Button

@@ -3,7 +3,7 @@ import { Global, css } from "@emotion/react";
 const GlobalStyles = () => (
   <Global
     styles={css`
-      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Lora:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Inter:wght@400;500;700&display=swap");
 
       * {
         margin: 0;
@@ -18,7 +18,6 @@ const GlobalStyles = () => (
       body {
         margin: 0;
         padding: 0;
-        font-family: "Cormorant Garamond", "Georgia", serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         overflow-x: hidden;

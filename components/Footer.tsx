@@ -11,6 +11,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import Link from "next/link";
+import { Company } from "@/lib/AppConstants";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -45,20 +46,21 @@ const Footer = () => {
             <Typography
               variant="h4"
               sx={{
-                fontFamily: "Playfair Display",
+                // fontFamily: "Montserrat",
                 fontWeight: 700,
                 color: "primary.main",
                 mb: 2,
               }}
             >
-              Legacy Textiles
+              {Company.name}
             </Typography>
             <Typography
               variant="body2"
               sx={{ mb: 2, color: "rgba(255,255,255,0.7)" }}
             >
-              Trusted wholesale textile supplier since 1978. Providing quality
-              handloom lungis, towels, and sarees across India.
+              Trusted wholesale textile supplier since {Company.established}.
+              Providing quality handloom lungis, towels, and sarees across
+              India.
             </Typography>
             <Box sx={{ display: "flex", gap: 1, mt: 3 }}>
               <IconButton
@@ -200,10 +202,10 @@ const Footer = () => {
           }}
         >
           <Typography variant="body2" sx={{ color: "rgba(255,255,255,0.5)" }}>
-            © {currentYear} Legacy Textiles. All rights reserved.
+            © {currentYear} {Company.name}. All rights reserved.
           </Typography>
           <Typography variant="body2" sx={{ color: "rgba(255,255,255,0.5)" }}>
-            Wholesale Textile Distributor Since 1978
+            Wholesale Textile Distributor Since {Company.established}
           </Typography>
         </Box>
       </Container>

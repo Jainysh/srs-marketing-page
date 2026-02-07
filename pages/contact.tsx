@@ -18,6 +18,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { Company } from "@/lib/AppConstants";
 
 const MotionBox = motion(Box);
 const MotionPaper = motion(Paper);
@@ -114,12 +115,10 @@ const ContactPage = () => {
   return (
     <>
       <Head>
-        <title>
-          Contact Us - Wholesale Textile Enquiries | Legacy Textiles
-        </title>
+        <title>Contact Us - Wholesale Textile Enquiries | {Company.name}</title>
         <meta
           name="description"
-          content="Get in touch for wholesale textile enquiries. Contact Legacy Textiles for bulk orders of lungis, towels, and sarees."
+          content={`Get in touch for wholesale textile enquiries. Contact ${Company.name} for bulk orders of lungis, towels, and sarees.`}
         />
       </Head>
 
