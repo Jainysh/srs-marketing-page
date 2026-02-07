@@ -68,7 +68,7 @@ const HomePage = () => {
     <>
       <Head>
         <title>
-          Legacy Textiles - Trusted Wholesale Textile Supplier Since
+          {Company.name} - Trusted Wholesale Textile Supplier Since
           {Company.established}
         </title>
         <meta
@@ -88,7 +88,7 @@ const HomePage = () => {
           minHeight: { xs: "70vh", md: "80vh" },
           display: "flex",
           alignItems: "center",
-          background: "linear-gradient(135deg, #FFFFFF 0%, #F4E5C2 100%)",
+          background: "linear-gradient(135deg, #FFFFFF 0%, #FFE54D 100%)",
           overflow: "hidden",
           "&::before": {
             content: '""',
@@ -117,7 +117,7 @@ const HomePage = () => {
                   sx={{
                     mb: 3,
                     background:
-                      "linear-gradient(135deg, #2C2C2C 0%, #D4AF37 100%)",
+                      "linear-gradient(135deg, #3B4BA0 0%, #FFD700 100%)",
                     backgroundClip: "text",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",

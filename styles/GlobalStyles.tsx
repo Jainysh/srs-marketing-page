@@ -27,7 +27,7 @@ const GlobalStyles = () => (
       .golden-line {
         width: 80px;
         height: 3px;
-        background: linear-gradient(90deg, #d4af37 0%, #f4e5c2 100%);
+        background: linear-gradient(90deg, #ffd700 0%, #ffe54d 100%);
         margin: 16px 0;
       }
 
@@ -64,12 +64,12 @@ const GlobalStyles = () => (
       }
 
       ::-webkit-scrollbar-thumb {
-        background: #d4af37;
+        background: #3b4ba0;
         border-radius: 5px;
       }
 
       ::-webkit-scrollbar-thumb:hover {
-        background: #b8941f;
+        background: #2a3670;
       }
     `}
   />

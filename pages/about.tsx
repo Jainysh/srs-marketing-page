@@ -105,7 +105,7 @@ const AboutPage = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          background: "linear-gradient(135deg, #2C2C2C 0%, #5A5A5A 100%)",
+          background: "linear-gradient(135deg, #3B4BA0 0%, #2A3670 100%)",
           color: "white",
           py: { xs: 8, md: 12 },
           position: "relative",
@@ -137,7 +137,7 @@ const AboutPage = () => {
               className="golden-line"
               sx={{
                 mx: "auto",
-                background: "linear-gradient(90deg, #D4AF37 0%, #F4E5C2 100%)",
+                background: "linear-gradient(90deg, #FFD700 0%, #FFE54D 100%)",
               }}
             />
             <Typography
@@ -268,19 +268,19 @@ const AboutPage = () => {
                     border: "1px solid",
                     borderColor: "divider",
                     borderTop: "4px solid",
-                    borderTopColor: "primary.main",
+                    borderTopColor: "secondary.main",
                     transition: "all 0.3s ease",
                     "&:hover": {
-                      borderTopColor: "primary.dark",
+                      borderTopColor: "secondary.dark",
                       transform: "translateY(-8px)",
-                      boxShadow: "0 12px 32px rgba(212,175,55,0.2)",
+                      boxShadow: "0 12px 32px rgba(255, 215, 0, 0.2)",
                     },
                   }}
                 >
                   <Typography
                     variant="h3"
                     sx={{
-                      color: "primary.main",
+                      color: "secondary.main",
                       mb: 2,
                       fontWeight: 700,
                     }}

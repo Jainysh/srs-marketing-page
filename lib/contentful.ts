@@ -1,8 +1,8 @@
 import { createClient } from "contentful";
 
 const client = createClient({
-  space: "process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID" || "",
-  accessToken: "12312312" || "",
+  space: "process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID",
+  accessToken: "12312312",
 });
 
 // Fetch all products

@@ -74,7 +74,7 @@ const TowelsPage = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          background: "linear-gradient(135deg, #F4E5C2 0%, #FFFFFF 100%)",
+          background: "linear-gradient(135deg, #FFE54D 0%, #FFFFFF 100%)",
           py: { xs: 8, md: 12 },
           position: "relative",
         }}

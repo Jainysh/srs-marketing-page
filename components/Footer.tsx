@@ -46,7 +46,6 @@ const Footer = () => {
             <Typography
               variant="h4"
               sx={{
-                // fontFamily: "Montserrat",
                 fontWeight: 700,
                 color: "primary.main",
                 mb: 2,

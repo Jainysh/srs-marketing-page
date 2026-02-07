@@ -16,7 +16,7 @@ const ConversionBlock: React.FC<ConversionBlockProps> = ({
   return (
     <Box
       sx={{
-        bgcolor: "primary.light",
+        bgcolor: "secondary.light",
         py: { xs: 6, md: 8 },
         my: { xs: 6, md: 10 },
         position: "relative",
@@ -29,7 +29,7 @@ const ConversionBlock: React.FC<ConversionBlockProps> = ({
           right: 0,
           height: "4px",
           background:
-            "linear-gradient(90deg, #D4AF37 0%, #F4E5C2 50%, #D4AF37 100%)",
+            "linear-gradient(90deg, #3B4BA0 0%, #FFD700 50%, #E63946 100%)",
         },
       }}
     >
@@ -97,7 +97,7 @@ const ConversionBlock: React.FC<ConversionBlockProps> = ({
                   href="/contact"
                   sx={{
                     borderColor: "primary.main",
-                    color: "primary.dark",
+                    color: "primary.main",
                     px: 4,
                     py: 1.5,
                     "&:hover": {
