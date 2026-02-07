@@ -68,9 +68,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
-                  bgcolor: "primary.main",
-                  color: "white",
-                  "&:hover": { bgcolor: "primary.dark" },
+                  bgcolor: "secondary.main",
+                  color: "primary.main",
+                  "&:hover": { bgcolor: "secondary.dark" },
                 }}
               >
                 <WhatsAppIcon />
@@ -78,9 +78,9 @@ const Footer = () => {
               <IconButton
                 href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
                 sx={{
-                  bgcolor: "primary.main",
-                  color: "white",
-                  "&:hover": { bgcolor: "primary.dark" },
+                  bgcolor: "secondary.main",
+                  color: "primary.main",
+                  "&:hover": { bgcolor: "secondary.dark" },
                 }}
               >
                 <PhoneIcon />
@@ -88,9 +88,9 @@ const Footer = () => {
               <IconButton
                 href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
                 sx={{
-                  bgcolor: "primary.main",
-                  color: "white",
-                  "&:hover": { bgcolor: "primary.dark" },
+                  bgcolor: "secondary.main",
+                  color: "primary.main",
+                  "&:hover": { bgcolor: "secondary.dark" },
                 }}
               >
                 <EmailIcon />
