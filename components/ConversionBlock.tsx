@@ -4,6 +4,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { motion } from "framer-motion";
 import { colorPallette } from "@/styles/theme";
+import { Company } from "@/lib/AppConstants";
 
 interface ConversionBlockProps {
   text?: string;
@@ -61,7 +62,7 @@ const ConversionBlock: React.FC<ConversionBlockProps> = ({
                 variant="contained"
                 size="large"
                 startIcon={<WhatsAppIcon />}
-                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Hello, I'm interested in your wholesale textile products.`}
+                href={`https://wa.me/91${Company.contact.phone}?text=Hello, I'm interested in your wholesale textile products.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
@@ -81,7 +82,7 @@ const ConversionBlock: React.FC<ConversionBlockProps> = ({
                 variant="contained"
                 size="large"
                 startIcon={<PhoneIcon />}
-                href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
+                href={`tel:${Company.contact.phone}`}
                 sx={{
                   px: 4,
                   py: 1.5,

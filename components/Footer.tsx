@@ -64,7 +64,7 @@ const Footer = () => {
             </Typography>
             <Box sx={{ display: "flex", gap: 1, mt: 3 }}>
               <IconButton
-                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
+                href={`https://wa.me/91${Company.contact.phone}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
@@ -76,7 +76,7 @@ const Footer = () => {
                 <WhatsAppIcon />
               </IconButton>
               <IconButton
-                href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
+                href={`tel:${Company.contact.phone}`}
                 sx={{
                   bgcolor: "primary.main",
                   color: "white",
@@ -84,16 +84,6 @@ const Footer = () => {
                 }}
               >
                 <PhoneIcon />
-              </IconButton>
-              <IconButton
-                href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
-                sx={{
-                  bgcolor: "primary.main",
-                  color: "white",
-                  "&:hover": { bgcolor: "primary.dark" },
-                }}
-              >
-                <EmailIcon />
               </IconButton>
             </Box>
           </Grid>
@@ -181,10 +171,12 @@ const Footer = () => {
               variant="body2"
               sx={{ color: "rgba(255,255,255,0.7)", mb: 1 }}
             >
-              {process.env.NEXT_PUBLIC_PHONE_NUMBER}
-            </Typography>
-            <Typography variant="body2" sx={{ color: "rgba(255,255,255,0.7)" }}>
-              {process.env.NEXT_PUBLIC_EMAIL}
+              <a
+                href={`tel:${Company.contact.phone}`}
+                style={{ color: "inherit" }}
+              >
+                +91 {Company.contact.phone}
+              </a>
             </Typography>
           </Grid>
         </Grid>

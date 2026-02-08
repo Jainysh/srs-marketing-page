@@ -142,7 +142,7 @@ const HomePage = () => {
                   <Button
                     variant="outlined"
                     size="large"
-                    href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
+                    href={`https://wa.me/91${Company.contact.phone}`}
                     target="_blank"
                     sx={{ px: 5, py: 2 }}
                   >

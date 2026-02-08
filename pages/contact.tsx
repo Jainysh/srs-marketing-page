@@ -15,7 +15,6 @@ import {
 } from "@mui/material";
 import { motion } from "framer-motion";
 import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Company } from "@/lib/AppConstants";
@@ -414,7 +413,7 @@ const ContactPage = () => {
               variant="contained"
               size="large"
               startIcon={<WhatsAppIcon />}
-              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=Hello, I'm interested in your wholesale textile products.`}
+              href={`https://wa.me/91${Company.contact.phone}?text=Hello, I'm interested in your wholesale textile products.`}
               target="_blank"
               sx={{
                 bgcolor: "#25D366",
@@ -431,7 +430,7 @@ const ContactPage = () => {
               variant="contained"
               size="large"
               startIcon={<PhoneIcon />}
-              href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
+              href={`tel:${Company.contact.phone}`}
               sx={{
                 py: 2,
                 px: 4,
