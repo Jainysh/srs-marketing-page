@@ -83,7 +83,7 @@ const Navbar = () => {
           href="/"
         >
           <img
-            src="/images/logo_hd.jpg"
+            src="/images/logo_full.jpg"
             alt={`${Company.name} Logo`}
             style={{ height: 40, marginRight: 8 }}
           />
@@ -150,7 +150,7 @@ const Navbar = () => {
               <Link href="/" passHref legacyBehavior>
                 <>
                   <img
-                    src="/images/logo_hd.jpg"
+                    src="/images/logo_full.jpg"
                     alt={`${Company.name} Logo`}
                     style={{ height: 40 }}
                   />

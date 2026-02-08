@@ -4,4 +4,5 @@ export const Company = {
   contact: {
     phone: "9448119561",
   },
+  website: "https://srs-demo.yashjain.xyz",
 };

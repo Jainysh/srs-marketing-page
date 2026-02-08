@@ -72,14 +72,6 @@ const HomePage = () => {
           {Company.name} - Trusted Wholesale Textile Supplier Since
           {Company.established}
         </title>
-        <meta
-          name="description"
-          content={`Wholesale supplier of quality handloom lungis, towels, and sarees. Serving India since ${Company.established} with reliable supply chain and trusted partnerships.`}
-        />
-        <meta
-          name="keywords"
-          content="wholesale textiles, handloom lungi, towels, sarees, textile distributor, India"
-        />
       </Head>
 
       {/* Hero Section */}
