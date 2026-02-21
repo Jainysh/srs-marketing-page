@@ -31,7 +31,7 @@ const LungiPage = () => {
   const features = [
     "Premium handloom quality",
     "Multiple design variants available",
-    "Consistent color and weave standards",
+    "Consistent colour and weave standards",
     "Regular bulk availability",
     "Standardized packaging options",
     "Suitable for retail and wholesale markets",
@@ -86,7 +86,7 @@ const LungiPage = () => {
             sx={{ textAlign: "center" }}
           >
             <Typography variant="h1" sx={{ mb: 3 }}>
-              Handloom Lungi
+              Handloom Lungis
             </Typography>
             <Box className="golden-line" sx={{ mx: "auto" }} />
             <Typography

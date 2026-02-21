@@ -24,7 +24,7 @@ const Footer = () => {
   ];
 
   const products = [
-    { label: "Lungi", path: "/products/lungi" },
+    { label: "Lungis", path: "/products/lungi" },
     { label: "Towels", path: "/products/towels" },
     { label: "Sarees", path: "/products/sarees" },
   ];

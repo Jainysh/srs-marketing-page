@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:url" content={Company.website}></meta>
         <meta
           name="keywords"
-          content="wholesale textiles, handloom lungi, towels, sarees, textile distributor, India"
+          content="wholesale textiles, handloom lungis, towels, sarees, textile distributor, India"
         />
       </Head>
       <ThemeProvider theme={theme}>

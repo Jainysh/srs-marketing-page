@@ -49,7 +49,7 @@ const ContactPage = () => {
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
   const businessTypes = ["Retailer", "Wholesaler", "Distributor", "Other"];
-  const products = ["Lungi", "Towels", "Sarees", "Multiple Products"];
+  const products = ["Lungis", "Towels", "Sarees", "Multiple Products"];
   const volumeCategories = [
     "Small (100-500 pieces)",
     "Medium (500-2000 pieces)",

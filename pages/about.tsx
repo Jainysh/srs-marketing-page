@@ -187,11 +187,11 @@ const AboutPage = () => {
                 variant="body1"
                 sx={{ mb: 2, fontSize: "1.125rem", lineHeight: 1.8 }}
               >
-                Our journey began with a simple commitment: to provide quality
-                textiles with unwavering reliability. This principle has guided
-                us through four decades of business, helping us grow from a
-                small operation to a trusted name in wholesale textile
-                distribution.
+                Our journey began in {Company.established} with a simple
+                commitment: to provide quality textiles with unwavering
+                reliability. This principle has guided us through nearly half a
+                century years of business, helping us grow from a small
+                operation to a trusted name in wholesale textile distribution.
               </Typography>
               <Typography
                 variant="body1"
@@ -324,7 +324,7 @@ const AboutPage = () => {
               mt: 3,
             }}
           >
-            Core principles that have guided us for over four decades
+            Core principles that have guided us for nearly half a century years
           </Typography>
         </MotionBox>
 

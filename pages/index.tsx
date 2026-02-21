@@ -29,7 +29,7 @@ const HomePage = () => {
   const legacyFeatures = [
     {
       icon: <CheckCircleIcon sx={{ fontSize: 40, color: "primary.main" }} />,
-      title: "45+ years in textile trade",
+      title: "Towards 50 years in textile trade",
       description: "Established expertise since 1978",
     },
     {
@@ -46,7 +46,7 @@ const HomePage = () => {
 
   const categories = [
     {
-      title: "Lungi",
+      title: "Lungis",
       image: "/images/lungi-preview.jpg",
       description: "Premium handloom lungis in various designs and patterns",
       path: "/products/lungi",
@@ -127,7 +127,8 @@ const HomePage = () => {
                     lineHeight: 1.6,
                   }}
                 >
-                  Supplying quality textiles for over four decades since{" "}
+                  Supplying quality textiles for nearly half a century
+                  since&nbsp;
                   {Company.established}
                 </Typography>
                 <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
@@ -178,7 +179,8 @@ const HomePage = () => {
               mt: 3,
             }}
           >
-            Four decades of excellence in textile wholesale distribution
+            Nearly half a century years of excellence in textile wholesale
+            distribution
           </Typography>
         </MotionBox>
 
