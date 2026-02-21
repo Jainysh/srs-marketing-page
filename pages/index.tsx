@@ -47,19 +47,19 @@ const HomePage = () => {
   const categories = [
     {
       title: "Lungis",
-      image: "/images/lungi-preview.jpg",
+      // image: "/images/lungi-preview.jpg",
       description: "Premium handloom lungis in various designs and patterns",
       path: "/products/lungi",
     },
     {
       title: "Towels",
-      image: "/images/towel-preview.jpg",
+      image: "/images/towel-preview.jpeg",
       description: "High-quality bath and hand towels in bulk",
       path: "/products/towels",
     },
     {
       title: "Sarees",
-      image: "/images/saree-preview.jpg",
+      // image: "/images/saree-preview.jpg",
       description: "Elegant sarees for wholesale distribution",
       path: "/products/sarees",
     },
@@ -99,7 +99,7 @@ const HomePage = () => {
       >
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
-            <Grid item xs={12} md={7}>
+            <Grid item xs={12} md={6}>
               <MotionBox
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -150,6 +150,19 @@ const HomePage = () => {
                     Enquire on WhatsApp
                   </Button>
                 </Stack>
+              </MotionBox>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <MotionBox
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                <img
+                  src="/images/hero.webp"
+                  alt="Hero Image"
+                  style={{ width: "100%" }}
+                />
               </MotionBox>
             </Grid>
           </Grid>
@@ -287,6 +300,17 @@ const HomePage = () => {
                     }}
                   >
                     {/* Placeholder for product image */}
+                    {category.image && (
+                      <img
+                        src={category.image}
+                        alt={`${category.title} Image`}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
+                      />
+                    )}
                   </CardMedia>
                   <CardContent sx={{ flexGrow: 1, p: 3 }}>
                     <Typography variant="h4" sx={{ mb: 2 }}>
